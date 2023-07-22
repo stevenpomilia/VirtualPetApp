@@ -16,10 +16,7 @@ public class VirtualPetApplication {
             // Handle exceptions during sleep
             e.printStackTrace();
         }
-        
-        // System.out.println("Virtual Pet App initiated...");
-        // System.out.println("");
-
+        //Uses getter method to retrieve pet.name 
         System.out.println("Welcome to Virtual Petland!");
         System.out.println("");
         System.out.println("A new " + pet.getName() + " has been created out of thin air.");
@@ -91,12 +88,9 @@ public class VirtualPetApplication {
                     System.out.println("Enter a valid action ID #.");
 
             }
-
             pet.tick();
         }
-
         System.out.println("Oh no.. You weren't able to proper care for " + pet.getName() + ". Game over.");
-
         input.close();
     }
 }
