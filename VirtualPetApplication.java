@@ -31,7 +31,7 @@ public class VirtualPetApplication {
         while (pet.isAlive()) {
 
             System.out.println(pet.getName() + "'s Stats:");
-            System.out.println("Hunger " + pet.getHunger());
+            System.out.println("Hunger: " + pet.getHunger());
             System.out.println("Thirst: " + pet.getThirst());
             System.out.println("Waste: " + pet.getWaste());
             System.out.println("Boredom: " + pet.getBoredom());
