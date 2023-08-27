@@ -16,7 +16,6 @@ public class VirtualPetApplication {
             // Handle exceptions during sleep
             e.printStackTrace();
         }
-
         // System.out.println("Virtual Pet App initiated...");
         // System.out.println("");
 
@@ -31,7 +30,7 @@ public class VirtualPetApplication {
         while (pet.isAlive()) {
 
             System.out.println(pet.getName() + "'s Stats:");
-            System.out.println("Hunger " + pet.getHunger());
+            System.out.println("Hunger: " + pet.getHunger());
             System.out.println("Thirst: " + pet.getThirst());
             System.out.println("Waste: " + pet.getWaste());
             System.out.println("Boredom: " + pet.getBoredom());
@@ -95,12 +94,9 @@ public class VirtualPetApplication {
                     System.out.println("Enter a valid action ID #.");
 
             }
-
             pet.tick();
         }
-
         System.out.println("Oh no.. You weren't able to proper care for " + pet.getName() + ". Game over.");
-
         input.close();
     }
 }

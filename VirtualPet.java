@@ -1,5 +1,5 @@
 public class VirtualPet {
-    // Instance variables represent state of pets
+    // Instance variables represent state of pet
     private String name;
     private int hunger;
     private int thirst;
