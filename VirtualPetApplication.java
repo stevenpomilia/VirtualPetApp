@@ -16,7 +16,7 @@ public class VirtualPetApplication {
             // Handle exceptions during sleep
             e.printStackTrace();
         }
-        
+
         // System.out.println("Virtual Pet App initiated...");
         // System.out.println("");
 
@@ -36,6 +36,10 @@ public class VirtualPetApplication {
             System.out.println("Waste: " + pet.getWaste());
             System.out.println("Boredom: " + pet.getBoredom());
             System.out.println("Sickness: " + pet.getSickness());
+
+            // Calculate then display overall health
+            int health = pet.calculateHealth();
+            System.out.println("Overall Health: " + health + "%");
 
             System.out.println("");
 
